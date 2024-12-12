@@ -1,0 +1,950 @@
+@font-face {
+    font-family: comic;
+    src: url(fonts/Urbanist[wght].ttf);
+}
+
+@font-face {
+    font-family: mynew;
+    src: url(fonts/NewakeFont-Demo.otf);
+}
+
+@keyframes zoom1 {
+    0%,100%{
+        scale: 0.5;
+    }
+    50%{
+        scale: 1;
+    }
+
+
+}
+
+
+
+.zom1{
+    animation: zoom1 2s ease-in-out infinite;
+}
+
+
+@keyframes zoom2 {
+    
+    0%,100%{
+        scale: 1;
+    }
+    50%{
+        scale: 0.7;
+    }
+    
+}
+
+
+.zom2{
+    animation: zoom2 2s ease-in-out infinite;
+}
+
+@keyframes slide-left {
+    
+    0%,100%{
+        transform: translateX(-100%);
+        opacity: 0;
+        scale: 0;
+    }
+
+    25%,50%,75%{
+        transform: translateX(0%);
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+.sldlft{
+    animation: slide-left 4s ease-in-out infinite ;
+}
+
+@keyframes bounce {
+    
+    0%,100%{
+        transform: translateY(-10%);
+    }
+
+    25%,75%{
+
+        transform: translateY(0%);
+
+    }
+
+    50%{
+        transform: translateY(-3%);
+    }
+
+}
+
+.bnc{
+
+    animation: bounce 3s ease-in-out infinite;
+
+}
+
+
+@keyframes zoom3 {
+    0%,100%{
+        scale: 0;
+        opacity: 0.2;
+        rotate: 360deg;
+    }
+
+    25%,50%,75%{
+        scale: 1;
+        opacity: 1;
+        rotate: 0deg;
+    }
+
+}
+
+.zom3{
+
+    animation: zoom3 4s ease-in-out infinite;
+
+}
+
+
+@keyframes myshadow {
+    0%,100%{
+        box-shadow: 0 0 25px 2px #B82AE9;
+        border-radius: 2vw;
+    }
+
+    50%{
+        box-shadow: 0 0 0 #B82AE9;
+    }
+    
+}
+
+.shdw{
+    animation: myshadow 2s ease-in-out infinite;
+}
+
+* {
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    color: white;
+    text-decoration: none;
+
+    transition: all 0.6s;
+
+}
+
+
+h1 {
+    font-size: 5vw;
+
+}
+
+h2 {
+    font-size: 9.5vw;
+    font-weight: 900;
+    line-height: 8vw;
+}
+
+h3 {
+    font-size: 4vw;
+}
+
+
+
+h5 {
+    font-size: 2vw;
+}
+
+h6 {
+    font-size: 1.5vw;
+}
+
+p {
+
+    font-size: 1.5vw;
+
+}
+
+
+body {
+
+    width: 100vw;
+    overflow-x: hidden;
+
+    background: url(images/fl\ bdy\ bg1.png);
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    font-family: comic;
+
+
+
+}
+
+
+main {
+    position: relative;
+}
+
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    gap: 20%;
+
+    width: 100vw;
+
+    padding: 2% 5%;
+
+}
+
+header div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    gap: 30%;
+
+}
+
+header div img {
+
+    height: 6vw;
+
+}
+
+header div a {
+
+    font-size: 1.5vw;
+    text-wrap: nowrap;
+    padding: 3%;
+
+
+
+}
+
+header div a:hover {
+
+    color: #B82AE9;
+    border-bottom: 1px solid #B82AE9;
+
+}
+
+.sect0 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    /* gap: 60%; */
+
+}
+
+
+.s0md1 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    gap: 40%;
+
+    margin: 3% 10%;
+
+}
+
+.s0d11 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    gap: 2vw;
+
+}
+
+.s0d11 p b {
+    /* color: #B82AE9; */
+    font-weight: 800;
+}
+
+.s0d11 img {
+
+    height: 5vw;
+    border-radius: 2.5vw;
+
+}
+
+.s0d11 img:hover {
+    scale: 1.1;
+    box-shadow: 0 0 15px #B82AE9;
+}
+
+
+.s0d12 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    gap: 1vw;
+
+}
+
+.s0d12 h6 {
+    font-weight: 800;
+    color: #CB32F7;
+}
+
+.crt-btn {
+
+    height: 2vw;
+
+}
+
+.crt-btn:hover {
+    scale: 1.1;
+}
+
+.s0d12 div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: left;
+    align-items: center;
+    /* margin: auto; */
+    gap: 20%;
+
+}
+
+.s0d12 div img {
+    height: 4vw;
+    margin: 50% 0 0 0;
+    border-radius: 2vw;
+}
+
+.s0d12 div img:hover {
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #B82AE9;
+
+}
+
+/* ........................................................    SECTION 0 ...........................................  */
+
+.sect1 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2vw;
+
+    width: 100vw;
+    margin: 25vw 0 10vw 0;
+    padding: 0 15%;
+
+}
+
+.s1md1 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: end;
+    margin: auto;
+    gap: 2vw;
+
+    width: 100%;
+
+}
+
+.s1d11 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    width: 50vw;
+    /* gap: 2vw; */
+    /* width: 60vw; */
+
+    /* border:  2px solid white; */
+    /* border-radius: 2vw; */
+
+
+}
+
+.s1d111 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    gap: 2vw;
+    width: 100%;
+    border-bottom: 0.3vw solid white;
+    border-radius: 2vw 2vw 0 0;
+
+    padding: 8%;
+
+    background: linear-gradient(to right, #CB32F7 0%, #9D5DE9 34%, #8E6FE1 50%, #1EF2A5 100%);
+
+}
+
+
+
+
+.s1d112 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: start;
+    margin: auto;
+    gap: 2vw;
+    width: 100%;
+    border-top: 0.3vw solid white;
+    border-radius: 0 0 2vw 2vw;
+
+    padding: 3% 8% 18% 8%;
+
+    /* background: linear-gradient( to right, #CB32F7 0%, #9D5DE9 34%, #8E6FE1 50%, #1EF2A5 100% ); */
+
+    background: #160E2F;
+
+
+}
+
+.s1d112 p {
+
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.s1d112 img {
+
+    height: 4vw;
+    border-radius: 2vw;
+
+}
+
+.s1d112 img:hover {
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #B82AE9;
+
+}
+
+
+.s1md2 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
+
+    width: 100%;
+
+}
+
+.s1smd {
+
+    height: 20vw;
+    width: 20vw;
+
+    background: #160e2f4c;
+    box-shadow: inset 0 0 30px #8E6FE1;
+    border-top: 0.1vw solid #1EF2A5;
+    border-right: 0.1vw solid #1EF2A5;
+    border-left: 0.1vw solid #CB32F7;
+    border-bottom: 0.1vw solid #CB32F7;
+    border-radius: 2vw;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    padding: 3% 3% 3% 3%;
+    gap: 5vw;
+
+
+}
+
+.s1smd div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.s1smd div img {
+    height: 3vw;
+}
+
+
+/* ........................................................    SECTION 1 ...........................................  */
+
+.sect2 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: 15vw 0 5vw 0;
+    gap: 5vw;
+
+}
+
+.tkn-hdng {
+
+    width: 80vw;
+
+}
+
+.s2md1 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    width: 80vw;
+
+    background: #160e2f81;
+    border-radius: 5vw;
+    padding: 2% 5%;
+
+}
+
+.s2sd {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+
+
+
+.s2sd3 {
+
+    flex: 3;
+    justify-content: flex-end;
+
+}
+
+.s2sd img {
+
+    height: 4vw;
+
+    /* margin: 2%; */
+
+}
+
+.s2sd div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+
+}
+
+.s2sd div h6 {
+
+    font-weight: 900;
+
+}
+
+.s2sd div p {
+
+    text-wrap: nowrap;
+
+}
+
+
+/* ........................................................    SECTION 2 ...........................................  */
+
+
+.sect3 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    padding: 10%;
+
+}
+
+.s3md1 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin: 5% 2% 0 2%;
+
+}
+
+.s3md1 div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: start;
+    gap: 1vw;
+
+    width: 23vw;
+    height: 27vw;
+
+    background: #160E2F;
+    border: 0.2vw solid #392579;
+    border-radius: 2vw;
+
+    padding: 5% 3%;
+
+}
+
+.s3md1 div ul {
+
+    margin: 0 0 0 5%;
+
+}
+
+.s3md1 div ul li {
+
+    margin: 5%;
+
+}
+
+.s3md1 div:hover {
+
+    scale: 1.07;
+    transform: translateY(5%);
+
+    background: linear-gradient(-135deg, #CB32F7 0%, #9D5DE9 34%, #8E6FE1 50%, #1EF2A5 100%);
+    border: 0.2vw solid #1EF2A5;
+
+}
+
+/* ........................................................    SECTION 1 ...........................................  */
+
+.sect4 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+
+    width: 100vw;
+
+    background: #160E2F;
+
+    padding: 3% 10%;
+
+}
+
+.ftr-lgo {
+
+    height: 15vw;
+
+}
+
+.sect4 div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    gap: 2vw;
+
+}
+
+.sect4 div img {
+
+    height: 5vw;
+    border-radius: 2.5vw;
+
+}
+
+.sect4 div img:hover{
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #8E6FE1;
+
+}
+
+
+/* ........................................................    SECTION 4 ...........................................  */
+
+
+footer {
+
+    background: #0F0336;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: center;
+    /* gap: 5%; */
+    width: 100vw;
+
+    padding: 0 15%;
+    
+
+}
+
+.ftrmd1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    padding: 5% 0;
+
+    border-bottom: 0.2vw solid rgba(255, 255, 255, 0.354);
+
+}
+
+.ftrmd1 div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+
+
+
+}
+
+
+.ftrmd1 div img {
+
+    height: 4vw;
+    border-radius: 2.5vw;
+    /* margin: 5%; */
+
+
+}
+
+.ftrmd1 img:hover{
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #8E6FE1;
+
+}
+
+.ftr-links{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5% !important;
+    margin: 0 0 0 -10vw;
+
+    
+}
+
+.ftr-links a{
+
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1%;
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.5);
+
+}
+
+.ftr-links a:hover{
+    color: white;
+    border-bottom: 0.1vw solid white;
+}
+
+
+.lglinks{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: left;
+    align-items: center;
+    gap: 10% !important;
+    /* margin: 0 0 0 -10vw; */
+
+}
+
+.lglinks a{
+
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1%;
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.5);
+
+}
+
+.lglinks a:hover{
+    color: white;
+    border-bottom: 0.1vw solid white;
+}
+
+
+/* ........................................................    FOOTER ...........................................  */
+
+
+.posabs{
+
+    position: absolute;
+    /* top: 30%; */
+
+}
+
+.s0lbg{
+
+    top: 3%;
+    left: 26%;
+    width: 48vw;
+    z-index: -1;
+
+}
+
+.s0lgo{
+
+    top: 5%;
+    left: 31%;
+    width: 38%;
+    z-index: -1;
+
+}
+
+.str{
+
+    top: 3%;
+    left: 67%;
+    width: 3%;
+
+}
+
+
+.fetrlgo{
+
+    top: 37%;
+    left: 20%;
+    width: 20vw;
+
+}
+
+
+.tklgo{
+
+    top: 54%;
+    left: 47%;
+    width: 25vw;
+
+}
+
+.ftlgo{
+
+    top: 92%;
+    left: 75%;
+    width: 20vw; 
+
+}
+
+.sobg{
+    display: none;
+}
